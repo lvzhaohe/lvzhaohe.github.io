@@ -1,0 +1,120 @@
+.am-topbar .am-text-ir {
+  display: block;
+  margin-right: 10px;
+  margin-top: 10px;
+  height: 60px;
+  width: 175px;
+  background: url(../i/examples/logo2.png) no-repeat left center;
+  -webkit-background-size: 175px 60px;
+  background-size: 175px 60px;
+
+}
+.am-topbar-brand{
+	height:80px;
+}
+.am-nav:
+{
+	height:100%;
+}
+.am-nav li a{
+     height:100%;
+     display:block;
+     text-align: center;
+}
+hr{
+	margin-top: 8px;
+	margin-bottom:8px;
+}
+.am-container h1{
+	margin-bottom:8px;
+}
+.am-container h2{
+	margin-bottom: 1px
+}
+.am-container a{
+	font-size:14px;
+}
+.am-u-sm-8 h2{
+	font-size:14px;
+}
+.am-u-md-4 a{
+	color:white;
+	margin-right: 10px
+}
+.am-footer-miscs{
+	text-align: center;
+}
+.am-g-collapse{
+	padding:0;
+	margin-top:0px;
+}
+.am-g-collapse hr{
+	margin:0px;
+	background-color:white;
+	height:1px;
+	border:none
+}
+.am-avg-sm-3 li img{
+	margin:0 auto;
+	margin-top: 40px
+}
+.am-topbar{
+	margin-bottom: 0
+}
+.am-topslider{
+	margin-top:0px;
+}
+.am-container h1{
+	margin-top:10px;
+}
+.am-u-sm-4 img{
+	margin-bottom: 8px
+}
+.am-u-lg-12 img{
+     margin-left: 10px
+}
+.amz-footer{
+	margin-top: 10px;
+	color:white;
+}
+.am-u-lg-2{
+	
+}
+.am-u-lg-3 ul li p{
+	color:white;
+	margin-top:0;
+}
+.am-u-lg-5 a{
+	margin-left: 10px;
+	color:white;
+}
+.am-footer-bottom{
+	background-color:#333333;
+	margin-left: 0;
+	margin-right:0;
+	padding-top: 15px;
+	padding-bottom: 15px
+
+}
+.am-topbar-right{
+	background-color:#333333;
+    padding-top: 10px;
+}
+.am-topbar-right a{
+	color:white;
+}
+.am-avg-sm-4 a{
+	display:block;
+	margin:0 auto;
+}
+.am-avg-sm-4 p{
+	text-align: center
+}
+img {
+  box-sizing: border-box;
+  /* v2.3 开始移除以下代码，详见 #502 */
+  /* max-width: 100%;
+  height: auto;*/
+  vertical-align: middle;
+  border: 0;
+}
