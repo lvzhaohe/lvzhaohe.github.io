@@ -2,11 +2,11 @@
   display: block;
   margin-right: 10px;
   margin-top: 10px;
-  height: 60px;
-  width: 175px;
+  height: 70px;
+  width: 200px;
   background: url(../i/examples/logo2.png) no-repeat left center;
-  -webkit-background-size: 175px 60px;
-  background-size: 175px 60px;
+  -webkit-background-size: 200px 70px;
+  background-size: 200px 70px;
 
 }
 .am-topbar-brand{
