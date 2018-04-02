@@ -1,3 +1,7 @@
+    blockquote,.drop-menu,.nav ul,.nav.nav-main li:first-child,.nav.nav-main li:first-child a,.nav.nav-main li:last-child a,.nav.nav-sub a,.nav.nav-tabs a,.bg-inverse .nav.nav-tabs a,.bg-inverse
+.nav.nav-tabs .active a,.selected-inline li,.progress,.progress
+    .progress-bar:last-child,.range,.range-bar,.panel,.panel-head,.panel-foot,.tab .tab-nav li a,.tab .tab-body-bordered,.dialog,.dialog .dialog-head,.tip,.tip .tip-body,.tip .image,.alert,.pagination li,.pagination .active,.pagination a:hover,.pagination-group,.pagination-group
+    li:first-child,.pagination-group li:last-child,.pager li a{border-radius:0;}
 .head a{
 	color:#b5b5b5;
 }
@@ -6,31 +10,50 @@
 }
 .nav a
 {
-	color:white;
+	color:black;
+}
+.nav a:hover{
+	background-color: gray;
+}
+.nav-inline.nav-menu ul li a:hover{
+	background-color:gray;
 }
 .nav-container{
 	background-image: url
 }
+
 #tab1{
-	background-color: #DDA0DD; 
+	background-color: #009AC7;
+}
+#tab1 a{
+   color:#FFFFCC;
 }
 #tab1:hover{
-	background-color: #DA70D6;
+	background-color: #336699;
 }
 #tab2{
-	background-color:#B0C4DE;
+	background-color:#46AF85
+}
+#tab2 a{
+   color:#FFFFCC;
 }
 #tab2:hover{
-	background-color: #6495ED;
+	background-color: #339933;
 }
 #tab3{
-	background-color: #90EE90;
+	background-color: #FFA851;
+}
+#tab3 a{
+   color:#FFFFCC;
 }
 #tab3:hover{
-	background-color:#3CB371 ;
+	background-color:#FF6600;
 }
 #tab4{
 	background-color:#FF7F50;
+}
+#tab4 a{
+   color:#FFFFCC;
 }
 #tab4:hover{
    background-color:#FF6347; 
@@ -38,8 +61,11 @@
 #tab5{
 	background-color:#FFD700;
 }
+#tab5 a{
+   color:#FFFFCC;
+}
 #tab5:hover{
-	background-color:#FF8C00;
+	background-color:#FFCC00;
 }
 .tab-nav li a:hover{
     color:white;
@@ -47,8 +73,10 @@
 .footerlink a{
 	display:block;
 	height:100%;
-	padding-top: 17px;
-	padding-left: 30px;
+	padding-top: 23px;
+    text-align: center;
+	font-size:14px;
+	height:67px;
 }
 .footerlink a:hover{
 	background-color: gray;
@@ -66,4 +94,7 @@
 }
 .nav-inline a:hover{
 	color:white;
+}
+li{
+	list-style-type:none;
 }
