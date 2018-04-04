@@ -8,10 +8,7 @@
 .head a:hover{
 	color:white;
 }
-.nav a
-{
-	color:black;
-}
+
 .nav a:hover{
 	background-color: gray;
 }
@@ -26,7 +23,7 @@
 	background-color: #009AC7;
 }
 #tab1 a{
-   color:#FFFFCC;
+   color:white;
 }
 #tab1:hover{
 	background-color: #336699;
@@ -35,7 +32,7 @@
 	background-color:#46AF85
 }
 #tab2 a{
-   color:#FFFFCC;
+   color:white;
 }
 #tab2:hover{
 	background-color: #009966;
@@ -44,7 +41,7 @@
 	background-color: #FFA851;
 }
 #tab3 a{
-   color:#FFFFCC;
+   color:white;
 }
 #tab3:hover{
 	background-color:#FF6600;
@@ -53,7 +50,7 @@
 	background-color:#FF7F50;
 }
 #tab4 a{
-   color:#FFFFCC;
+   color:white;
 }
 #tab4:hover{
    background-color:#FF6347; 
@@ -62,7 +59,7 @@
 	background-color:#FFD700;
 }
 #tab5 a{
-   color:#FFFFCC;
+   color:white;
 }
 #tab5:hover{
 	background-color:#FFCC00;
@@ -73,7 +70,7 @@
 .footerlink a{
 	display:block;
 	height:100%;
-	padding-top: 23px;
+	padding-top: 16px;
     text-align: center;
 	font-size:14px;
 	height:67px;
@@ -97,4 +94,8 @@
 }
 li{
 	list-style-type:none;
+}
+.news-list{
+	max-width:1400px;
+}
 }
