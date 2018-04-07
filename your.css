@@ -53,16 +53,16 @@
    color:white;
 }
 #tab4:hover{
-   background-color:#FF6347; 
+   background-color:#FF4040; 
 }
 #tab5{
-	background-color:#FFD700;
+	background-color:#F4A460;
 }
 #tab5 a{
    color:white;
 }
 #tab5:hover{
-	background-color:#FFCC00;
+	background-color:#D2691E ;
 }
 .tab-nav li a:hover{
     color:white;
@@ -97,5 +97,11 @@ li{
 }
 .news-list{
 	max-width:1400px;
+}
+.linklist a:hover{
+	color:#0ae;
+}
+.body-left a:hover{
+	color:#0ae;
 }
 }
