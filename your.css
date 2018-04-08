@@ -2,6 +2,9 @@
 .nav.nav-tabs .active a,.selected-inline li,.progress,.progress
     .progress-bar:last-child,.range,.range-bar,.panel,.panel-head,.panel-foot,.tab .tab-nav li a,.tab .tab-body-bordered,.dialog,.dialog .dialog-head,.tip,.tip .tip-body,.tip .image,.alert,.pagination li,.pagination .active,.pagination a:hover,.pagination-group,.pagination-group
     li:first-child,.pagination-group li:last-child,.pager li a{border-radius:0;}
+.head{
+	background-color:#696969
+}
 .head a{
 	color:#b5b5b5;
 }
@@ -10,15 +13,38 @@
 }
 
 .nav a:hover{
-	background-color: gray;
+	background-color: #00BFFF;
 }
+
 .nav-inline.nav-menu ul li a:hover{
 	background-color:gray;
 }
-.nav-container{
-	background-image: url
+.nav-inline a{
+	color:white;
+	text-align: center;
 }
-
+.nav-inline a:hover{
+	color:white;
+}
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+.drop-menu{
+	margin-left:30%;
+}
+.nav-inline a{
+	font-size: 15px
+}
+}
+.nav-container{
+	background-image: url(top-bg.jpg);
+	background-size:cover;
+	background-position:100% 100%;
+}
+ @media only screen and (min-width: 100px) and (max-width: 640px) {
+    .nav-container{
+	background-image: url(top-bg.jpg);
+	background-position:top left;
+}
+   }
 #tab1{
 	background-color: #009AC7;
 }
@@ -86,12 +112,7 @@
 	width:100%;
 	height:67px;
 }
-.nav-inline a{
-	color:black;
-}
-.nav-inline a:hover{
-	color:white;
-}
+
 li{
 	list-style-type:none;
 }
