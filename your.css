@@ -153,7 +153,10 @@ li{
 	margin-top:0px;
 	margin-left:5px;
 }
+.tab-head a{
+	font-size:13px;
  }
+}
 @media only screen and (min-width: 640px) and (max-width: 1024px) {
     .nav-container{
 	background-image: url(top-bg.jpg);
