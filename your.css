@@ -41,10 +41,26 @@
 }
  @media only screen and (min-width: 100px) and (max-width: 640px) {
     .nav-container{
-	background-image: url(top-bg.jpg);
-	background-position:top left;
+	background-image: url(top-bg-m.png);
+	background-position:0% 0%;
 }
-   }
+}
+.logo {
+	height:85px;
+}
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+   .logo {
+	height:65px;
+}
+.title{
+	margin-top: 10px
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 640px){
+.logo{
+	height:45px;
+}
+}
 #tab1{
 	background-color: #009AC7;
 }
