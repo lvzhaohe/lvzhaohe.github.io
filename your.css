@@ -127,7 +127,7 @@ li{
 	width:320px;
 	margin-top:10px;
 }
- @media only screen and (min-width: 100px) and (max-width: 640px) {
+ @media only screen and (min-width: 370px) and (max-width: 640px) {
     .nav-container{
 	background-image: url(top-bg-m.png);
 	background-position:0% 0%;
@@ -136,11 +136,24 @@ li{
 	  height:45px;
    }
    .title{
-	width:165px;
+	width:160px;
 	margin-top:0px;
 }
 }
-
+ @media only screen and (min-width: 100px) and (max-width: 370px) {
+ 	 .nav-container{
+	background-image: url(top-bg-m.png);
+	background-position:0% 0%;
+}
+   .logo{
+	  height:40px;
+   }
+   .title{
+	width:140px;
+	margin-top:0px;
+	margin-left:5px;
+}
+ }
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
     .nav-container{
 	background-image: url(top-bg.jpg);
@@ -176,3 +189,4 @@ li{
 	font-size: 16px
  }
 }
+
