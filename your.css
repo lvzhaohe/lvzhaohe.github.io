@@ -223,6 +223,12 @@ li{
 .logo-bottom{
 	margin-top:10px;
 }
+.body-right{
+	padding-left:0px;
+}
+.body-right-nav{
+	margin-left:0px;
+}
 }
  @media only screen and (min-width: 1024px) and (max-width: 1200px){
  	 .nav-container{
@@ -248,6 +254,9 @@ li{
 .logo-bottom{
 	margin-top: 8px;
 } 
+.body-right{
+	padding-left:10px;
+}
 }
  @media only screen and (min-width: 1400px) {
 .logo img{
