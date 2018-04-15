@@ -125,7 +125,7 @@
       <li id="tab3"><a href="#tab-units2">先锋讯息</a> </li>
     </ul>
   </div>
-  <div class="tab-body body-left">
+  <div class="tab-body body-left margin-small-left margin-small-right">
     <div class="tab-panel active" id="tab-start2">
        <ul class="list-text list-underline ">
     <li class="text-default"><a href="#"><span class="date">2018-02-01</span>第八届心理分析与中国文化国际论坛在我校举办</a></li>
@@ -136,6 +136,7 @@
     <li class="text-default"><a href="#"><span class="date">2018-02-01</span>第八届心理分析与中国文化国际论坛在我校举办</a></li>
     <li class="text-default"><a href="#"><span class="date">2018-02-01</span>第八届心理分析与中国文化国际论坛在我校举办</a></li>
 </ul>
+<div class="line  text-right margin-top"><a class="more" href="#" title="显示更多"><span class="moretext"><img src="more.jpg"></span></a></div>
     </div>
     <div class="tab-panel" id="tab-css2">
        <ul class="list-text list-underline ">
@@ -147,6 +148,7 @@
     <li class="text-default"><a href="#"><span class="date">2018-02-01</span>中国开发性金融促进会副会长兼秘书长郭明社一行来我校考察调研 </a></li>
     <li class="text-default"><a href="#"><span class="date">2018-02-01</span>中国开发性金融促进会副会长兼秘书长郭明社一行来我校考察调研 </a></li>
 </ul>
+<div class="line  text-right margin-top"><a class="more" href="#" title="显示更多"><span class="moretext"><img src="more.jpg"></span></a></div>
     </div>
     <div class="tab-panel" id="tab-units2">
        <ul class="list-text list-underline ">
@@ -158,6 +160,7 @@
     <li class="text-default"><a href="#"><span class="date">2018-02-01</span>陕西省人才工作目标责任考核组来我校考核2017年度人才工作</a></li>
     <li class="text-default"><a href="#"><span class="date">2018-02-01</span>陕西省人才工作目标责任考核组来我校考核2017年度人才工作</a></li>
 </ul>
+<div class="line text-right margin-top"><a class="more" href="#" title="显示更多"><span class="moretext"><img src="more.jpg"></span></a></div>
     </div>
   </div>
 </div>
@@ -337,7 +340,7 @@
 发布时间：2018-03-28 09:27:11.0">新中国金融70年：基于金融功能变迁的视角 </a>
                    </li> 
                 </ul>
- 
+                <div class="line text-right"><a class="more" href="#" title="显示更多"><span class="moretext1"><img src="more.jpg"></span></a></div>
 </div> 
 
 </div>
@@ -507,11 +510,14 @@
 发布时间：2018-03-28 09:27:11.0">新中国金融70年：基于金融功能变迁的视角 </a>
                    </li> 
                 </ul>
+                <div class="line text-right"><a class="more" href="#" title="显示更多"><span class="moretext1"><img src="more.jpg"></span></a></div>
+    </div>
+       
  
  <script type="text/javascript">$(function(){
     $(".scroll").sudyScroll({
         width: 328,     // 单元格宽度
-        height: 56,     // 单元格高度
+        height: 52,     // 单元格高度
         display: 5,     // 显示几个单元
         step: 5,            // 每次交替增加几个单元，值不能大于display
         dir:"y",        // 交替方向，纵向为"y"，水平为"x"，默认为"y"纵向交替
@@ -523,13 +529,18 @@
         pagination:false,        // 是否显示索引按钮
         pagTrigger:"click"  //索引按钮事件
     });
-});</script>
+    });
+    $(".more").mouseover(function(){
+   $(this).find("img").attr('src', 'more2.jpg');
+});
+     $(".more").mouseout(function(){
+   $(this).find("img").attr('src', 'more.jpg');
+});
+    </script>
 </div> 
 
 </div>
-
-    </div>
-    
+ 
 
 
 

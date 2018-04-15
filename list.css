@@ -36,54 +36,7 @@
 }
 }
 
-#tab1{
-	background-color: #009AC7;
-}
-#tab1 a{
-   color:white;
-}
-#tab1:hover{
-	background-color: #336699;
-}
-#tab2{
-	background-color:#46AF85
-}
-#tab2 a{
-   color:white;
-}
-#tab2:hover{
-	background-color: #009966;
-}
-#tab3{
-	background-color: #FFA851;
-}
-#tab3 a{
-   color:white;
-}
-#tab3:hover{
-	background-color:#FF6600;
-}
-#tab4{
-	background-color:#FF7F50;
-}
-#tab4 a{
-   color:white;
-}
-#tab4:hover{
-   background-color:#FF4040; 
-}
-#tab5{
-	background-color:#DA70D6 ;
-}
-#tab5 a{
-   color:white;
-}
-#tab5:hover{
-	background-color:#C71585  ;
-}
-.tab-nav li a:hover{
-    color:white;
-}
+
 .footerlink a{
 	display:block;
 	height:100%;
@@ -199,12 +152,6 @@ li{
 }
 .navbox ul li ul{
 	filter:alpha(opacity=100);-moz-opacity:1;opacity:1;
-}
-.body-right{
-	padding-left:0px;
-}
-.moretext1 img{
-	margin-right:10px;
 }
 }
 
