@@ -1,3 +1,4 @@
+
     blockquote,.drop-menu,.nav ul,.nav.nav-main li:first-child,.nav.nav-main li:first-child a,.nav.nav-main li:last-child a,.nav.nav-sub a,.nav.nav-tabs a,.bg-inverse .nav.nav-tabs a,.bg-inverse
 .nav.nav-tabs .active a,.selected-inline li,.progress,.progress
     .progress-bar:last-child,.range,.range-bar,.panel,.panel-head,.panel-foot,.tab .tab-nav li a,.tab .tab-body-bordered,.dialog,.dialog .dialog-head,.tip,.tip .tip-body,.tip .image,.alert,.pagination li,.pagination .active,.pagination a:hover,.pagination-group,.pagination-group
@@ -285,5 +286,74 @@ li{
 .logo {
 	margin-right:13px 
 }
-
+}
+#tab3 a
+{
+height:37px;
+margin-top: 0px;
+-webkit-animation-direction:alternate;
+transition: height margin-top 1s;
+-moz-transition: height margin-top 1s; /* Firefox 4 */
+-webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
+-o-transition: height margin-top 1s; /* Opera */
+}
+#tab1 a
+{
+height:37px;
+margin-top: 0px;
+-webkit-animation-direction:alternate;
+transition: height margin-top 1s;
+-moz-transition: height margin-top 1s; /* Firefox 4 */
+-webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
+-o-transition: height margin-top 1s; /* Opera */
+}
+#tab2 a
+{
+height:37px;
+margin-top: 0px;
+-webkit-animation-direction:alternate;
+transition: height margin-top 1s;
+-moz-transition: height margin-top 1s; /* Firefox 4 */
+-webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
+-o-transition: height margin-top 1s; /* Opera */
+}
+#tab4 a
+{
+height:37px;
+margin-top: 0px;
+-webkit-animation-direction:alternate;
+transition: height margin-top 1s;
+-moz-transition: height margin-top 1s; /* Firefox 4 */
+-webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
+-o-transition: height margin-top 1s; /* Opera */
+}
+#tab5 a
+{
+height:37px;
+margin-top: 0px;
+-webkit-animation-direction:alternate;
+transition: height margin-top 1s;
+-moz-transition: height margin-top 1s; /* Firefox 4 */
+-webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
+-o-transition: height margin-top 1s; /* Opera */
+}
+#tab1 a:hover{
+	height:47px;
+	margin-top: 10px;
+}
+#tab2 a:hover{
+	height:47px;
+	margin-top: 10px;
+}
+#tab3 a:hover{
+	height:47px;
+	margin-top: 10px;
+}
+#tab4 a:hover{
+	height:47px;
+	margin-top: 10px;
+}
+#tab5 a:hover{
+	height:47px;
+	margin-top: 10px;
 }
