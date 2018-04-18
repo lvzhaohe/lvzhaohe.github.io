@@ -41,54 +41,59 @@
 }
 }
 
-#tab1{
+#tab-css20{
 	background-color: #009AC7;
 }
 #tab1 a{
    color:white;
 }
-#tab1:hover{
+#tab-css20:hover{
 	background-color: #336699;
 }
-#tab2{
+#tab-css21{
 	background-color:#46AF85
 }
 #tab2 a{
    color:white;
 }
-#tab2:hover{
+#tab-css21:hover{
 	background-color: #009966;
 }
-#tab3{
+#tab-css22{
 	background-color: #FFA851;
 }
-#tab3 a{
+#tab3  a{
    color:white;
 }
-#tab3:hover{
+#tab-css22:hover{
 	background-color:#FF6600;
 }
-#tab4{
+#tab-css23{
 	background-color:#FF7F50;
 }
 #tab4 a{
    color:white;
 }
-#tab4:hover{
+#tab-css23:hover{
    background-color:#FF4040; 
 }
-#tab5{
+#tab-css24{
 	background-color:#DA70D6 ;
 }
 #tab5 a{
    color:white;
 }
-#tab5:hover{
+#tab-css24:hover{
 	background-color:#C71585  ;
 }
+.tab-head a{ display:block;height:35px; float:left; margin:10px 8px 0 0;}
+.tab-head a:hover{ height:47px; margin-top:0px; padding-bottom:-13px;}
+.tab-head a.on{ height:47px; margin-top:0px;padding-top:13px;}
 .tab-nav li a:hover{
     color:white;
 }
+.tab-nav li a.on{ padding-top:13px;}
+.tab-nav li a:hover{ padding-top:13px;}
 .footerlink a{
 	display:block;
 	height:100%;
@@ -299,74 +304,4 @@ li{
 .linklist{
      	text-align:left;
      }
-}
-#tab3 a
-{
-height:37px;
-margin-top: 0px;
--webkit-animation-direction:alternate;
-transition: height margin-top 1s;
--moz-transition: height margin-top 1s; /* Firefox 4 */
--webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
--o-transition: height margin-top 1s; /* Opera */
-}
-#tab1 a
-{
-height:37px;
-margin-top: 0px;
--webkit-animation-direction:alternate;
-transition: height margin-top 1s;
--moz-transition: height margin-top 1s; /* Firefox 4 */
--webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
--o-transition: height margin-top 1s; /* Opera */
-}
-#tab2 a
-{
-height:37px;
-margin-top: 0px;
--webkit-animation-direction:alternate;
-transition: height margin-top 1s;
--moz-transition: height margin-top 1s; /* Firefox 4 */
--webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
--o-transition: height margin-top 1s; /* Opera */
-}
-#tab4 a
-{
-height:37px;
-margin-top: 0px;
--webkit-animation-direction:alternate;
-transition: height margin-top 1s;
--moz-transition: height margin-top 1s; /* Firefox 4 */
--webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
--o-transition: height margin-top 1s; /* Opera */
-}
-#tab5 a
-{
-height:37px;
-margin-top: 0px;
--webkit-animation-direction:alternate;
-transition: height margin-top 1s;
--moz-transition: height margin-top 1s; /* Firefox 4 */
--webkit-transition: height margin-top 1s; /* Safari 和 Chrome */
--o-transition: height margin-top 1s; /* Opera */
-}
-#tab1 a:hover{
-	height:47px;
-	margin-top: 10px;
-}
-#tab2 a:hover{
-	height:47px;
-	margin-top: 10px;
-}
-#tab3 a:hover{
-	height:47px;
-	margin-top: 10px;
-}
-#tab4 a:hover{
-	height:47px;
-	margin-top: 10px;
-}
-#tab5 a:hover{
-	height:47px;
-	margin-top: 10px;
 }
