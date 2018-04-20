@@ -87,13 +87,13 @@
 	background-color:#C71585  ;
 }
 .tab-head a{ display:block;height:35px; float:left; margin:10px 8px 0 0;}
-.tab-head a:hover{ height:42px; margin-top:0px; }
-.tab-head a.on{ height:42px; margin-top:0px;}
+.tab-head a:hover{ height:45px; margin-top:0px; }
+.tab-head a.on{ height:45px; margin-top:0px;}
 .tab-nav li a:hover{
     color:white;
 }
-.tab-nav li a.on{ padding-top:10px;}
-.tab-nav li a:hover{ padding-top:10px;}
+.tab-nav li a.on{ padding-top:12px;}
+.tab-nav li a:hover{ padding-top:12px;}
 .footerlink a{
 	display:block;
 	height:100%;
