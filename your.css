@@ -87,17 +87,17 @@
 	background-color:#C71585  ;
 }
 .tab-head a{ display:block;height:35px; float:left; margin:10px 8px 0 0;}
-.tab-head a:hover{ height:47px; margin-top:0px; padding-bottom:-13px;}
-.tab-head a.on{ height:47px; margin-top:0px;padding-top:13px;}
+.tab-head a:hover{ height:42px; margin-top:0px; }
+.tab-head a.on{ height:42px; margin-top:0px;}
 .tab-nav li a:hover{
     color:white;
 }
-.tab-nav li a.on{ padding-top:13px;}
-.tab-nav li a:hover{ padding-top:13px;}
+.tab-nav li a.on{ padding-top:10px;}
+.tab-nav li a:hover{ padding-top:10px;}
 .footerlink a{
 	display:block;
 	height:100%;
-	padding-top: 16px;
+	padding-top: 17px;
     text-align: center;
 	font-size:14px;
 	height:67px;
@@ -223,7 +223,7 @@ li{
 .linklist{
 	margin:0 auto;
 }
-.tab-head a{ display:block;height:35px; float:left; margin:10px 3px 0 0;}
+.tab-head a{   margin:10px 3px 0 0;}
 }
 }
 
