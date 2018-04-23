@@ -302,10 +302,13 @@ li{
 	color:white;
 	font-weight: bold;
 }
-.button1{
-	color:white;
+.bread a{
+	font-size: 13px;
 }
-.button1:hover{
-       background-color: #0068b7;
-       color:white;
+.bread a:hover{
+	color:#0068b7;
+}
+.list-bottom a{
+	font-size:13px;
+	margin-left: 8px;
 }
