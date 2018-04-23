@@ -312,3 +312,9 @@ li{
 	font-size:13px;
 	margin-left: 8px;
 }
+.list-text a:hover{
+	color:#0068b7;
+}
+.list-bottom a:hover{
+	color:#0068b7;
+}
