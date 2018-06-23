@@ -1,0 +1,231 @@
+<html class="pixel-ratio-3 retina ios ios-11 ios-11-0 ios-gt-10 ios-gt-9 ios-gt-8 ios-gt-7 ios-gt-6"><head>
+        <title>input</title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    ">
+    
+    <link rel="stylesheet" href="../lib/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css">
+    <style>
+.error{ 
+    height:25px; 
+    line-height:25px; 
+    color:#F00; 
+    }
+.success{ 
+    height:25px; 
+    line-height:25px; 
+    color:#096;
+    } 
+  </style>
+      </head>
+    
+      
+      <body ontouchstart style="background: #fdfdfd">
+    
+        <!-- 头部 -->
+        <header class="demos-header">
+          <h1 class="demos-title">Footer</h1>
+        </header>
+    
+        <!-- 内容 -->
+        <h1 class="demos-second-title">完善个人信息</h1>
+    
+        <div class="weui-cells weui-cells_form">
+          <!-- 手机号 -->
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">手机号</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号" id="userPhone" onBlur="checkPhone()" oninput="checkPhone()">
+            </div>
+            <div class="weui-cell__ft" id="phoneErr">请输入手机号</div>
+          </div>
+          <!-- 地区 -->
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label for="home-city" class="weui-label">城市</label></div>
+            <div class="weui-cell__bd">
+              <input class="weui-input" id="home-city" type="text" readonly="" data-code="141100" data-codes="140000,141100"  onBlur="checkCity()" oninput="checkCity()">
+            </div>
+            <div class="weui-cell__ft" id="cityErr">请输入城市</div>             
+          </div>
+          <!-- QQ号 -->
+          <div class="weui-cell">
+              <div class="weui-cell__hd"><label class="weui-label">QQ号</label></div>
+              <div class="weui-cell__bd">
+                <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入QQ号" id="userqq" onBlur="checkQQ()" oninput="checkQQ()">
+              </div>
+              <div class="weui-cell__ft" id="qqErr">请输入QQ号</div>              
+          </div>
+          <!-- 个人图片 -->
+          <div class="weui-cell">
+              <div class="weui-cell__bd">
+                <div class="weui-uploader">
+                  <div class="weui-uploader__hd">
+                    <p class="weui-uploader__title">图片上传</p>
+                    <div class="weui-uploader__info">0/2</div>
+                  </div>
+                  <div class="weui-uploader__bd">
+                    <ul class="weui-uploader__files" id="uploaderFiles">
+                      <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                      <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                      <li class="weui-uploader__file" style="background-image:url(./images/pic_160.png)"></li>
+                      <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                        <div class="weui-uploader__file-content">
+                          <i class="weui-icon-warn"></i>
+                        </div>
+                      </li>
+                      <li class="weui-uploader__file weui-uploader__file_status" style="background-image:url(./images/pic_160.png)">
+                        <div class="weui-uploader__file-content">50%</div>
+                      </li>
+                    </ul>
+                    <div class="weui-uploader__input-box">
+                      <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- 提交 -->
+        <div class="weui-btn-area">
+            <a href="javascript:;" class="weui-btn weui-btn_primary open-popup weui-btn_disabled" data-target="#table" id="submit"  onclick="transInfo()">提交</a>
+        </div>
+    
+        <div id="table" class="weui-popup__container">
+            <div class="weui-popup__overlay"></div>
+            <div class="weui-popup__modal" style="background: white;">
+                <div class="weui-form-preview">
+                    <header class="demos-header">
+                        <h1 class="demos-second-title">请核对你的信息</h1>
+                    </header>
+                    <div class="weui-form-preview__hd">
+                      <label class="weui-form-preview__label">手机号</label>
+                      <em class="weui-form-preview__value" id="userphone_show">15635575658</em>
+                    </div>
+                    <div class="weui-form-preview__hd">
+                        <label class="weui-form-preview__label">城市</label>
+                        <em class="weui-form-preview__value" id="usercity_show">山西省 长治市</em>
+                    </div>
+                    <div class="weui-form-preview__hd">
+                        <label class="weui-form-preview__label">QQ号</label>
+                        <em class="weui-form-preview__value" id="userqq_show">446678848</em>
+                    </div>
+                    <div class="weui-footer_fixed-bottom">
+                        <div class="weui-form-preview__ft">
+                            <a class="weui-form-preview__btn weui-form-preview__btn_default close-popup" href="javascript:">辅助操作</a>
+                            <button type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">操作</button>
+                          </div>      
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+       
+    
+    
+        <!-- 尾部 -->
+        <div class="weui-footer weui-footer_fixed-bottom">
+          <p class="weui-footer__links">
+            <a href="http://jqweui.com" class="weui-footer__link">jQuery-WeUI 首页</a>
+          </p>
+          <p class="weui-footer__text">Copyright © 2016 jqweui.io</p>
+        </div>
+    
+    <script src="../lib/jquery-2.1.4.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script>
+    //上传图像完成后验证是否表单是否全部正确输入(在监听到上传图像完成后调用)
+  function checkForm(){ 
+  var phonetip = checkPhone(); 
+  var qqtip = checkQQ();  
+  var citytip = checkCity();
+  alert(1); 
+  if(citytip&&qqtip&&phonetip)
+     {
+       var showtooltips = document.getElementById('submit');
+       showtooltips.style.backgroundColor="#1aad19";
+       showtooltips.style.color="#fff";
+     }
+    }
+    //验证手机号
+  function checkPhone(){ 
+  var userphone = document.getElementById('userPhone'); 
+  var phonrErr = document.getElementById('phoneErr');
+  var pattern =/^[1][3,4,5,7,8][0-9]{9}$/; //验证手机号正则表达式
+  if(userphone.value.length == 0){ 
+    phonrErr.innerHTML="电话号码不能为空"
+    phonrErr.className="error"
+    return false; 
+    } 
+
+  if(!pattern.test(userphone.value)){ 
+    phonrErr.innerHTML="电话号码不合规范"
+    phonrErr.className="error"
+    return false; 
+    } 
+   else{ 
+     phonrErr.innerHTML="<img src='images/icon_nav_msg.png' height='25px' weight='20px' alt='' />";
+     return true; 
+     } 
+  } 
+    //验证QQ号
+  function checkQQ(){ 
+  var userqq = document.getElementById('userqq'); 
+  var qqErr = document.getElementById('qqErr'); 
+  var pattern = /^[1-9][0-9]{4,11}$/; //验证QQ号正则表达式
+  if(userqq.value.length == 0){ 
+    qqErr.innerHTML="QQ号码不能为空"
+    qqErr.className="error"
+    return false; 
+    } 
+  if(!pattern.test(userqq.value)){ 
+    qqErr.innerHTML="QQ号码不合规范"
+    qqErr.className="error"
+    return false; 
+    } 
+   else{ 
+     qqErr.innerHTML="<img src='images/icon_nav_msg.png' height='25px' weight='20px' alt='' />";
+     return true; 
+     } 
+  }
+    //验证城市
+  function checkCity(){ 
+  var userphone = document.getElementById('home-city'); 
+  var phonrErr = document.getElementById('cityErr'); 
+  if(userphone.value.length == 0){ 
+    phonrErr.innerHTML="城市不能为空"
+    phonrErr.className="error"
+    return false; 
+    } 
+   else{ 
+     phonrErr.innerHTML="<img src='images/icon_nav_msg.png' height='25px' weight='20px' alt='' />";
+     return true; 
+     } 
+  }  
+    </script>
+    <script>
+      $(function() {
+        FastClick.attach(document.body);
+      });
+    </script>
+    <script src="../js/jquery-weui.js"></script>
+    <script src="../js/city-picker.js"></script>
+    <script>
+      var place;
+      $("#home-city").cityPicker({
+        title: "选择目的地",
+        showDistrict: false,
+        onChange: function (picker, values, displayValues) {
+          console.log(values, displayValues);
+          place = displayValues;
+        }
+      });
+    </script>
+    <script src="../js/userinfo.js"></script>  
+    
+    </body></html>
